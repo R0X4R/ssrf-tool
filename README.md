@@ -32,12 +32,6 @@ You can use:
 To do so. Also, Make sure to customerise your patterns file for greater results.
 
 + **Installation**
-
-    ```
-    go get -u github.com/R0X4R/ssrf-tool
-    ```
-    
-    To install via git clone
     
     ```sh
     git clone https://github.com/R0X4R/ssrf-tool.git
