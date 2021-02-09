@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-# ssrf-tool
-=======
-
-# SSRF-Detector
+# SSRF Detector Tool
 
 A SSRF detector tool written in golang. I have fixed some errors and added some more payloads into it. But the tool credits goes to [z0idsec](https://twitter.com/z0idsec).
 
@@ -101,16 +97,11 @@ To do so. Also, Make sure to customerise your patterns file for greater results.
     echo "https://www.twitter.com" | getJS -complete | ssrf-tool -domains domains -silent=false -brute=true -gen=true -patterns patterns.txt  -parameters params.txt
     ```
 
-    Can be used with other tools like subfinder & amass
-
-
 + **Testing The Paths**
 
     ```sh
     ssrf-tool -domains domains -silent=false -patterns patterns.txt -paths=true  -brute=false -payloads ssrf.txt
     ```
-
-    Can be used with other tools like subfinder & amass
 
 + **Testing Parameters with waybackurls**
 
@@ -123,5 +114,3 @@ To do so. Also, Make sure to customerise your patterns file for greater results.
 
 **Credits:** 
 [@z0idsec](https://twitter.com/z0idsec)    [@ethicalhackingplayground](https://github.com/ethicalhackingplayground/)
-
->>>>>>> Stashed changes
