@@ -25,9 +25,9 @@ A SSRF detector tool written in golang. I have fixed some errors and added some 
 
 Make sure when creating wordlists or finding ssrf with my tool that the domains are resolved.
 You can use:
-- httpx
-- httprobe
-- massdns
+- [httpx](https://github.com/projectdiscovery/httpx)
+- [httprobe](https://github.com/tomnomnom/httprobe)
+- [massdns](https://github.com/blechschmidt/massdns)
 
 To do so. Also, Make sure to customerise your patterns file for greater results.
 
