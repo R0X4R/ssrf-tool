@@ -36,6 +36,16 @@ To do so. Also, Make sure to customerise your patterns file for greater results.
     ```
     go get -u github.com/R0X4R/ssrf-tool
     ```
+    
+    To install via git clone
+    
+    ```sh
+    git clone https://github.com/R0X4R/ssrf-tool.git
+    cd ssrf-tool
+    go build ssrftool.go && mv ssrftool /usr/bin/
+    ```
+    You can also download the precompiled binary file [binary](https://github.com/R0X4R/ssrf-tool/releases)
+    
 + **Usage**
 
     ```sh
