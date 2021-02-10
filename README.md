@@ -110,8 +110,6 @@ To do so. Also, Make sure to customerise your patterns file for greater results.
     subfinder -d yahoo.com -silent | httpx -silent >> domains | ssrf-tool -domains domains -payloads ssrf.txt -silent=false -paths=true -patterns patterns.txt
     ```
 
-    [![Image from Gyazo](https://i.gyazo.com/4b74c62de553e2cda60e45f51c0fc8a4.gif)](https://gyazo.com/4b74c62de553e2cda60e45f51c0fc8a4)
-
 + **Wordlist Creation**
 
     ```sh
@@ -123,23 +121,20 @@ To do so. Also, Make sure to customerise your patterns file for greater results.
 + **BruteForce For SSRF**
 
     ```sh
-    echo "https://www.twitter.com" | getJS -complete | ssrf-tool -domains domains -silent=false -brute=true -gen=true -patterns patterns.txt  -parameters params.txt
+    echo "https://www.twitter.com" | getJS -complete | anew domains | ssrftool -domains domains -silent=false -brute=true -gen=true -patterns patterns.txt  -parameters params.txt
     ```
 
 + **Testing The Paths**
 
     ```sh
-    ssrf-tool -domains domains -silent=false -patterns patterns.txt -paths=true  -brute=false -payloads ssrf.txt
+    ssrftool -domains domains -silent=false -patterns patterns.txt -paths=true  -brute=false -payloads ssrf.txt
     ```
 
 + **Testing Parameters with waybackurls**
 
     ```sh
-    echo "twitter.com" | waybackurls >> domains  ; ssrf-tool -domains domains -silent=false -paths=false -payloads ssrf.txt
+    echo "twitter.com" | waybackurls >> domains; ssrftool -domains domains -silent=false -paths=false -payloads ssrf.txt
     ```
-
-
-    [![Image from Gyazo](https://i.gyazo.com/9e50667879ebc2e2d834d2db8e058cc9.gif)](https://gyazo.com/9e50667879ebc2e2d834d2db8e058cc9)
 
 **Credits:** 
 [@z0idsec](https://twitter.com/z0idsec)    [@ethicalhackingplayground](https://github.com/ethicalhackingplayground/)
