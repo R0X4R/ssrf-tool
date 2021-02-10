@@ -51,7 +51,7 @@ To do so. Also, Make sure to customerise your patterns file for greater results.
     [WRN] Use with caution. You are responsible for your actions
     [WRN] Developers assume no liability and are not responsible for any misuse or damage.
 
-    Usage of ./ssrf-tool:
+    Usage of ./ssrftool:
     -append
             Append the payload to the parameter
     -brute
@@ -76,6 +76,8 @@ To do so. Also, Make sure to customerise your patterns file for greater results.
             silent output
     ```
   
+    **Payloads and patterns files:** [https://github.com/R0X4R/ssrf-tool/tree/main/important](https://github.com/R0X4R/ssrf-tool/tree/main/important)
+    
     **Exploitation**
     
     ```sh
